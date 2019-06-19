@@ -1,0 +1,11 @@
+.vip{
+    color:green
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
