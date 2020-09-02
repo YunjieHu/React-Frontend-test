@@ -1,4 +1,4 @@
-# Frontend Applicant Test
+# React Pagination Assignment - SOLUTION
 Use this repository to create a simple app, with the following features/details, that paginates a list of users. Usage of React Hooks & ES6+ language features, when appropriate, is encouraged.
 
 ### Instructions / Details
