@@ -42,12 +42,16 @@ class User extends Component{
     async componentDidMount(){
         //fetching the users using async await
         const location = "http://jsonplaceholder.typicode.com/users";
-        const response = await fetch(location)
-        .then(response => response.json())
-        .catch(e => {
-            this.setState({error: e, isLoading: false})
-        });
-        this.setState({users: response, isLoading: false, totalUsers: response.length});
+        try{
+            const response = await fetch(location)
+            if (!response.ok) {  throw new Error(response.status);  }
+            else
+            this.setState({users: await response.json(), isLoading: false, totalUsers: response.length});
+        }
+        catch(error){
+            this.setState({error: error, isLoading: false})
+        };
+    
     }
 
     render(){

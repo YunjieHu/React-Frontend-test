@@ -4,7 +4,7 @@ import User from "./Components/UserComponent/User"
 const App = () => {
 	return (
 		<div>
-			<h1>Industry Weapon Applicant Test</h1>
+			<h1>React Pagination Test</h1>
 			<User/>
 		</div>
 	)
